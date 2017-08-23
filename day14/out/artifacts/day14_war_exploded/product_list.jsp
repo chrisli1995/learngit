@@ -20,15 +20,17 @@
         <th>市场价</th>
         <th>商场价</th>
         <th>商品描述</th>
+        <th>操作</th>
     </tr>
     <c:forEach items="${list}" var="p">
     <tr>
-        <td>${p.pid}</td>
-        <td>${p.pimage}</td>
-        <td>${p.pname}</td>
-        <td>${p.market_price}</td>
-        <td>${p.shop_price}</td>
-        <td>${p.pdesc}</td>
+        <td width='8%'>${p.pid}</td>
+        <td width='8%'><img alt="" src="${pageContext.request.contextPath}/${p.pimage}" width="80"></td>
+        <td width='8%'>${p.pname}</td>
+        <td width='8%'>${p.market_price}</td>
+        <td width='8%'>${p.shop_price}</td>
+        <td width='8%'>${p.pdesc}</td>
+        <td width='8%'>修改|删除</td>
     </tr>
     </c:forEach>
 </table>
