@@ -13,5 +13,6 @@
   <body>
   <h2><a href="/findAll">展示所有商品</a></h2>
   <h2><a href="/add.jsp">添加商品</a></h2>
+  <h2><a href="/showProductByPage?currPage=1">分页展示商品</a></h2>
   </body>
 </html>
